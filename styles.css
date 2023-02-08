@@ -16,7 +16,13 @@ body {
     overflow-x: hidden;
 }
 
-/*   NAVAGATION BAR   */
+/*   
+
+
+NAVAGATION BAR 
+
+
+*/
 
 nav {
     height: 80px;
@@ -149,7 +155,18 @@ button:active {
   
     /* Added this after the tutorial to 
     show it over the wave on larger screens */
-    
+
     z-index: 50;
-  }
-  
+}
+
+/*   
+
+
+HIGHLIGHTS
+
+
+*/
+
+
+
+
