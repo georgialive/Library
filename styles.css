@@ -152,11 +152,7 @@ button:active {
 
 .header__img--wrapper {
     padding: 20px;
-  
-    /* Added this after the tutorial to 
-    show it over the wave on larger screens */
-
-    z-index: 50;
+    z-index: 2;
 }
 
 .container {
@@ -177,8 +173,37 @@ HIGHLIGHTS
 
 */
 
+#highlights {
+    position: relative;
+    max-width: 100vh;
+}
+
+#highlights:after,
+#highlights:before {
+  background: url('assets/wave.svg');
+  content: "";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#highlights:before {
+  transform: translateY(-100%);
+  top: 1px;
+}
+
+#highlights:after {
+  transform: translateY(100%) rotate(180deg);
+  bottom: 1px;
+}
+
 .highlight__wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -192,6 +217,7 @@ HIGHLIGHTS
 
 .highlight__para {
     text-align: center;
+    max-width: 280px;
 }
 
 .highlight__img {
@@ -210,5 +236,18 @@ HIGHLIGHTS
 .highlight__subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
+/*
+
+
+FEATURES
+
+
+*/
+
+#features {
+    padding-top: 1000px;
+    background-color: rgba(115, 66, 214, 0.1);
+}
