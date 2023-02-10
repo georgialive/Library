@@ -248,6 +248,73 @@ FEATURES
 */
 
 #features {
-    padding-top: 1000px;
+    padding-top: 8vw;
     background-color: rgba(115, 66, 214, 0.1);
 }
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
+.book__img {
+    max-height: 380px;
+    transition: all 300ms ease;
+    cursor: not-allowed;
+}
+
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.book:hover .book__img {
+    transform: scale(1.03);
+}
+
+.book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.book__title:hover {
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+.book__ratings {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.book__price {
+    font-size: 20px;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: #bfbfbf;
+}
+
+/* 
+
+
+EXPLORE
+
+
+*/
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+  }
+  
+
